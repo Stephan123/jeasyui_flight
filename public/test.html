@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test - jQuery EasyUI Demo</title>
+
+    <link rel="stylesheet" type="text/css" href="themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+</head>
+<body>
+
+    <form id="ff" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input class="easyui-validatebox" type="text" name="name" data-options="required:true" />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input class="easyui-validatebox" type="text" name="email" data-options="validType:'email'" />
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        $('#ff').form({
+                    url:...,
+                onSubmit: function(){
+            // do some check
+            // return false to prevent submit;
+        },
+        success:function(data){
+            alert(data)
+        }
+        });
+        // submit the form
+        $('#ff').submit();
+    </script>
+
+</body>
+</html>
