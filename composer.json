@@ -13,7 +13,8 @@
 	],
 	"require": {
 		"php": ">=5.3.3",
-		"mikecao/flight": "v1.1"
+		"mikecao/flight": "v1.1",
+        "unlight/sparrow": "dev-master"
 	},
 	"suggest": {
 		"teacup/log": "Small log file writer with adjustable log level settings.",
